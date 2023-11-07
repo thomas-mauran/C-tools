@@ -9,7 +9,7 @@ all: hextool
 
 
 install: hextool
-	sudo cp $(BUILD_FOLD)/$(HEX_TOOL) /bin
+	sudo cp $(BUILD_FOLD)/$(HEX_TOOL) /usr/local/bin
 
 hextool: mkdir
 	$(COMPILER) $(HEX_TOOL)/main.c -g -o $(BUILD_FOLD)/$(HEX_TOOL) -lm
